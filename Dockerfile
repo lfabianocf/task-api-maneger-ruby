@@ -1,6 +1,6 @@
 #
 FROM ruby:2.6.10
-RUN apt-get update -qq && apt-get install -y nodejs postgresql-client build-essential
+RUN apt-get update -qq && apt-get install -y nodejs postgresql-client build-essential vim
 WORKDIR /teste
 COPY Gemfile /teste/Gemfile
 COPY Gemfile.lock /teste/Gemfile.lock
